@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App Vanilla JS</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+     
+
+    </div>
+    
+
+    <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+        <div>
+          <button id="backButton"><<</button>
+          <button id="nextButton">>></button>
+          <button id="logout" onclick="logout()">ÇIKIŞ YAP</button>
+          
+        </div>
+      </div>
+
+      <div id="weekdays">
+        
+        <div>Pazartesi</div>
+        <div>Salı</div>
+        <div>Çarşamba</div>
+        <div>Perşembe</div>
+        <div>Cuma</div>
+        <div>Cumartesi</div>
+        <div>Pazar</div>
+      </div>
+
+      <div id="calendar"></div>
+    </div>
+
+    <div id="newEventModal">
+      <h2>Yeni Olay</h2>
+
+      <input id="olay" placeholder="Olay Adı" />
+      <input id="olaytip" placeholder="Olay Tipi" />
+      <input id="aciklama" placeholder="Açıklama" />
+      <input id="tarih" type="datetime-local" placeholder="Event Title" />
+      <br />
+      <button id="saveButton">Kaydet</button>
+      <button id="cancelButton">Vazgeç</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Olay İşlemleri</h2>
+
+      <p id="eventOlay"></p>
+      <p id="eventolaytip"></p>
+      <p id="eventaciklama"></p>
+      <p id="eventTarih"></p>
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+    <script src="script.js"></script>
+
+
+    
+  </body>
+</html>
