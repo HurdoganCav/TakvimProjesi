@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Üye Ol</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='login.js'></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login">
+        <form name='form-login'>
+    
+            <h1>ÜYE OL</h1>
+            
+            <label for="tcno">TC NO</label>
+            <input type="text" id="tcno"  required>
+
+            <label for="adsoyad">ADI SOYAD</label>
+            <input type="text" id="adsoyad"  required>
+
+            <label for="telefon">TELEFON</label>
+            <input type="text" id="telefon"  required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email"  required>
+    
+            <label for="pw">ŞİFRE</label>
+            <input type="password" id= "pw" required name="pw">
+    
+            <ul class="helper-text">
+                <li class="length">En az 4 karakter uzunluğunda olmalı.</li>
+                <li class="lowercase">Küçük harf içermelidir.</li>
+                <li class="uppercase">Bir büyük harf içermeli.</li>
+                <li class="special">Bir sayı veya özel karakter içermelidir.</li>
+            </ul>
+           
+            <input id="rgstr_btn" type="submit" value="KAYDOL" onclick="store()">
+            <br />
+            <a href="login.html">GİRİŞ YAP</a>
+    
+        </form>
+    </div>
+</body>
+</html>
